@@ -16,7 +16,7 @@ const gitHub = document.getElementById("github_btn");
 
 // Adding event listener to the GitHub button:-
 gitHub.addEventListener("click", () => {
-    window.open("https://github.com/PatelKathan089", "_blank");
+    window.open("https://github.com/shubham83", "_blank");
 })
 
 // Declaring empty array to store the city names for dropdown_menu:-
@@ -96,7 +96,7 @@ const getWeatherByCityName = async (city = "ahmedabad") => {
         cardContainer.innerHTML = ""; // Clearing the previous forecast data:-
         data.forecast.forecastday.map((item) => {
             return (
-                cardContainer.innerHTML += `<div class="w-full flex flex-col items-center justify-center gap-1 bg-slate-200 text-slate-900 rounded-lg py-2 px-4 shadow-lg shadow-black">
+                cardContainer.innerHTML += `<div class="w-full flex flex-col items-center justify-center gap-1 bg-sky-400 text-white rounded-lg py-2 px-4 shadow-lg shadow-black">
                         <h4 class="font-bold">(${item.date})</h4>
                         <img src="https:${item.day.condition.icon}" alt="${item.day.condition.text}" width="70" height="70" />
                         <p class="self-start font-semibold">Temp:<span class="text-sm ml-1 font-normal">${item.day.avgtemp_c}<sup>o</sup> C</span></p>
@@ -136,7 +136,7 @@ const getWeatherByCurrentLocation = async (latitude, longitude) => {
         cardContainer.innerHTML = ""; // Clearing the previous forecast data:-
         data.forecast.forecastday.map((item) => {
             return (
-                cardContainer.innerHTML += `<div class="w-full flex flex-col items-center justify-center gap-1 bg-slate-200 text-slate-900 rounded-lg py-2 px-4 shadow-lg shadow-black">
+                cardContainer.innerHTML += `<div class="w-full flex flex-col items-center justify-center gap-1 bg-slate-200 text-white rounded-lg py-2 px-4 shadow-lg shadow-black">
                         <h4 class="font-bold">(${item.date})</h4>
                         <img src="https:${item.day.condition.icon}" alt="${item.day.condition.text}" width="70" height="70" />
                         <p class="self-start font-semibold">Temp:<span class="text-sm ml-1 font-normal">${item.day.avgtemp_c}<sup>o</sup> C</span></p>
